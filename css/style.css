@@ -327,10 +327,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
 }
 
-li.nav-info{
-    display: flex;
-    flex-flow: row;
-}
 
 
 /*------------------------------------*\
