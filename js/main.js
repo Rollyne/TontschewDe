@@ -16,7 +16,8 @@
 
 	///////////////////////////
 	// Smooth scroll
-	$("#nav .main-nav a[href^='#']").on('click', function(e) {
+
+	$("#nav .main-nav a[href^='#'], .to-contact").on('click', function(e) {
 		e.preventDefault();
 		var hash = this.hash;
 		$('html, body').animate({
@@ -42,17 +43,7 @@
 		$(this).parent().toggleClass('open-drop');
 	});
 
-	///////////////////////////
-	// On Scroll
-	$(window).on('scroll', function() {
-		var wScroll = $(this).scrollTop();
-
-		// Fixed nav
-		wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
-
-		// Back To Top Appear
-		wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
-	});
+	
 
 	///////////////////////////
 	// magnificPopup
@@ -63,7 +54,7 @@
 
 	///////////////////////////
 	// Owl Carousel
-	$('#about-slider').owlCarousel({
+	let owlCarouselData = {
 		items:1,
 		loop:true,
 		margin:15,
@@ -72,7 +63,10 @@
 		dots : true,
 		autoplay : true,
 		animateOut: 'fadeOut'
-	});
+	}
+	$('#about-slider').owlCarousel(owlCarouselData);
+    $('#about-slider2').owlCarousel(owlCarouselData);
+    $('#about-slider3').owlCarousel(owlCarouselData);
 
 
 

@@ -141,6 +141,10 @@ ul, ol {
     list-style: none
 }
 
+.pros-list{
+    margin-top:150px;
+}
+
 /* -- section  -- */
 
 .section {
@@ -155,6 +159,11 @@ ul, ol {
 .sm-padding {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.xs-padding{
+    padding-top:30px;
+    padding-bottom: 30px;
 }
 
 
@@ -264,10 +273,6 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     color: #FFF;
 }
 
-.form-submit{
-    width:50%;
-}
-
 .white-btn {
     background: #FFF;
     color: #10161A !important;
@@ -320,6 +325,11 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
     }
+}
+
+li.nav-info{
+    display: flex;
+    flex-flow: row;
 }
 
 
@@ -660,7 +670,8 @@ header {
     position: relative;
     text-align: center;
     padding: 40px 20px;
-    border: 1px solid #EEE;
+    border-top: 2px solid #EEE;
+    border-bottom: 2px solid #EEE;
     margin: 15px 0px;
     height: 200px;
 }
@@ -671,7 +682,7 @@ header {
     margin-bottom: 20px;
 }
 
-.about:after {
+/* .about:after {
     content: "";
     background-color: #1C1D21;
     position: absolute;
@@ -686,16 +697,16 @@ header {
 
 .about:hover:after {
     width: 100%;
-}
+} */
 
 .about h3 {
     -webkit-transition: 0.2s color;
     transition: 0.2s color;
 }
 
-.about:hover h3 {
+/* .about:hover h3 {
     color: #fff;
-}
+} */
 
 
 /*------------------------------------*\
@@ -823,6 +834,10 @@ header {
     margin: 15px auto;
     border: 1px solid #EEE;
     height: 250px;
+}
+
+a .service{
+    color: #868F9B;
 }
 
 .service i {
@@ -1542,6 +1557,9 @@ header {
 @media only screen and (max-width: 991px) {
     .pricing{
         width: 50%;
+    }
+    .pros-list{
+        margin-top: 0;
     }
 }
 
