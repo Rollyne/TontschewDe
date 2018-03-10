@@ -244,6 +244,7 @@ textarea {
 input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
     border-color: #86d550;
     opacity: 1;
+    outline: none;
 }
 
 /* --  Buttons  -- */
@@ -261,6 +262,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .main-btn {
     background: #86d550;
     color: #FFF;
+}
+
+.form-submit{
+    width:50%;
 }
 
 .white-btn {
@@ -1456,8 +1461,12 @@ header {
     margin-bottom: 20px;
 }
 
+.small-label{
+    font-size: small;
+}
+
 .contact-form {
-    text-align: center;
+    width:100%;
     margin-top: 40px;
 }
 
@@ -1466,12 +1475,16 @@ header {
 }
 
 
-.contact-form .input:nth-child(1), .contact-form .input:nth-child(2) {
-    width: calc(50% - 10px);
+.half-input {
+    width: calc(50% - 10px) !important;
 }
 
 .contact-form .input:nth-child(2) {
     margin-left: 15px;
+}
+
+.mandatory{
+    color: darkred;
 }
 
 /*------------------------------------*\

@@ -128,4 +128,13 @@
 		
 	});
 
+
+	////////////////////////
+	////Reset form
+	$(".reset-form").click(function() {
+		let form = $(this).closest('form');
+		form.find("input[type=text], textarea").val("");
+		form.find("input[type=checkbox]").attr('checked', false);
+	});
+
 })(jQuery);
